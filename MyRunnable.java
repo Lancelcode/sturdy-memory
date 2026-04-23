@@ -8,13 +8,14 @@ public class MyRunnable implements Runnable {
 
     @Override
     public void run() {
+
         long startTime = System.nanoTime();
-        for (int i = 0; i < 1000000; i++) {
+        for (int i = 0; i < 1_000_000; i++) {
             counter++;
         }
         long elapsedTime = System.nanoTime() - startTime;
 
-        System.out.println(Thread.currentThread().getName() + " Counter incresed up to:  " + elapsedTime/1000000 + " Milliseconds");
+        System.out.println(Thread.currentThread().getName() + " Counter incresed up to:  " +counter + " in " + elapsedTime/1000000 + " Milliseconds");
     }
 
 
