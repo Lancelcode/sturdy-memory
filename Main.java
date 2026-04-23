@@ -14,7 +14,7 @@ public class Main {
             throw new RuntimeException(e);
         }
 
-        System.out.println(myRunnable.getCounter());
+        System.out.println("final counter value: " + myRunnable.getCounter());
     }
     
 }
