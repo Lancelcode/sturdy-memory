@@ -15,7 +15,7 @@ public class MyRunnable implements Runnable {
         }
         long elapsedTime = System.nanoTime() - startTime;
 
-        System.out.println(Thread.currentThread().getName() + " Counter incresed up to:  " +counter + " in " + elapsedTime/1000000 + " Milliseconds");
+        System.out.println(Thread.currentThread().getName() + " Counter incresed up to:  " + counter + " in " + elapsedTime/1000000 + " Milliseconds");
     }
 
 
